@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router'
-import UiSpinner from '@/components/ui/spinner.vue'  // Import the spinner component
+import UiSpinner from '/components/ui/spinner.vue'  // Import the spinner component
 
 // Access the API key from runtime config
 const config = useRuntimeConfig()
