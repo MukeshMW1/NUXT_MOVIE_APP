@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router'
-import UiSpinner from '/components/ui/spinner.vue'  // Import the spinner component
+// import UiSpinner from '/components/ui/spinner.vue'  // Import the spinner component
 
 // Access the API key from runtime config
 const config = useRuntimeConfig()
@@ -97,7 +97,7 @@ const goToMovieDetail = (movieId) => {
 <template>
   <div class="container mx-auto p-4 bg-black text-white">
     <!-- Loading Spinner for initial fetch -->
-    <UiSpinner v-if="loading && movies.length === 0" />
+    <!-- <UiSpinner v-if="loading && movies.length === 0" /> -->
 
     <!-- Error Message -->
     <div v-if="error" class="text-red-500 text-center text-xl mt-8">
