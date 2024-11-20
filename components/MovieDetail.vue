@@ -49,7 +49,7 @@ const router = useRouter()
 // Fetch movies from the API
 const fetchMovies = async () => {
   try {
-    console.log(`Fetching movies from: ${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US`)
+   
     const { data } = await useFetch(`${BASE_URL}/discover/movie`, {
       params: {
         api_key: API_KEY,
