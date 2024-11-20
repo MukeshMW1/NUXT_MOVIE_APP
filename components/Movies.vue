@@ -34,7 +34,7 @@ const fetchMovies = async (pageNumber = 1) => {
       loadingMore.value = true  // Loading for infinite scroll
     }
 
-    console.log(`Fetching movies from: ${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&page=${pageNumber}`)
+
 
     const data = await $fetch(`${BASE_URL}/discover/movie`, {
       params: {
